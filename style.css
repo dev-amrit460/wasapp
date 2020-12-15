@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg');
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.icon{
+    margin: auto;
+    height: 4rem;
+    width: 4rem;
+}
+.container0{
+    background-color:#28a745;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    text-shadow: 0.1rem 0.1rem black;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    width: 100vw;
+    height: 15vh;   
+}
+.container1{
+    height: 78vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+.message{
+    border: 0.0625rem solid green;
+    border-radius:1rem;
+    background-color:#E5FCAF;
+    width: 42%;
+    padding:0.625rem;
+    margin: 1.1rem 0.75rem;
+    font-weight: bold;
+}
+.left{
+    float:left;
+    clear: both;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+.right{
+    float: right;
+    clear: both;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+.send{
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+}
+#messageInp{
+    height: 7vh;
+    border-radius: 1.3rem;
+    width: 80vw;
+    background-color:#e6fff2;
+}
+#btn{
+    border-radius: 10px;
+}
