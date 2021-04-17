@@ -5,8 +5,9 @@ const server = http.createServer(app);
 const io= require('socket.io')(server)
 
 const PORT=process.env.PORT ||5000
+app.use(express.static(__dirname));
 server.listen(PORT, () => {
-    console.log('App listening on port 5000!');
+    console.log('App listening on port '+ PORT);
 });
 
 const users={};

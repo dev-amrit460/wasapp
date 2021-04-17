@@ -1,4 +1,4 @@
-const socket = io("https://wassapp.herokuapp.com/");
+const socket = io("http://localhost:5000/");
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
