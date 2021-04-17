@@ -23,7 +23,7 @@ form.addEventListener('submit',(e)=>{
     socket.emit('send',message);
     messageInput.value ='' ;
 })
-const name = prompt("Please Enter Your Name To Join : ");
+const name = prompt("Your Name Please : ");
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined',name =>{
