@@ -28,7 +28,7 @@ body{
     height: 15vh;   
 }
 .container1{
-    height: 85vh;
+    height: 75vh;
     width: 100vw;
     overflow-y: auto;
     scrollbar-width: none;
