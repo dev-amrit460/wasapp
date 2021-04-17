@@ -16,12 +16,9 @@ body{
     height: 4rem;
     width: 4rem;
 }
-.container0{
+.container-fluid{
     background-color:#28a745;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     font-family: 'Baloo Tammudu 2', cursive;
     color: white;
     text-shadow: 0.1rem 0.1rem black;
@@ -31,7 +28,7 @@ body{
     height: 15vh;   
 }
 .container1{
-    height: 78vh;
+    height: 85vh;
     width: 100vw;
     overflow-y: auto;
 }
@@ -57,6 +54,8 @@ body{
     font-size: large;
 }
 .send{
+    position: fixed;
+    bottom: 0;
     display: flex;
     height: 7vh;
     align-items: center;
