@@ -33,7 +33,11 @@ form.addEventListener('submit', (e) => {
     }
 
 })
-const name = prompt("Your Name Please : ");
+let name = prompt("Your Name Please : ");
+if(name==undefined || name==null || name==""){
+    name="Person";
+};
+
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined', name => {
