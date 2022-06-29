@@ -42,10 +42,10 @@ body{
   }
   
 .message{
-    border: 0.0625rem solid green;
+    border: 0.0625rem solid rgb(176, 252, 176);
     border-radius:1rem;
-    background-color:#E5FCAF;
-    width: 42%;
+    background-color:#effcd0;
+    max-width: 42%;
     padding:0.625rem;
     margin: 1.1rem 0.75rem;
     font-weight: bold;
@@ -62,7 +62,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: large;
 }
-.send{
+#send-container{
     position: fixed;
     bottom: 1rem;
     display: flex;
@@ -73,8 +73,8 @@ body{
 }
 #messageInp{
     height: 7vh;
-    border-radius: 1.3rem;
-    width: 75vw;
+    border-radius: 1.1rem;
+    width: 70vw;
     background-color:#e6fff2;
     border: 1px solid #28a745;
     outline: none;
@@ -84,7 +84,24 @@ body{
 #btn{
     border-radius: 1rem;
     height: 7vh;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    min-width: 3rem;
     border: 1px solid #28a745;
-    margin-left:1rem;
+    /* margin-left:1rem; */
+    max-width: 4rem;
 }
+#file1{
+    display: none;
+}
+.uploadLabel {
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    height: 7vh;
+    /* padding: auto 15px; */
+    cursor: pointer;
+    min-width: 3rem;
+    max-width: 4rem;
+    background-color: #28a745;
+    color: #ffffff;
+  }
