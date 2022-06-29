@@ -20,7 +20,20 @@ io.on('connection',socket=>{
     socket.on('send',message=>{
         socket.broadcast.emit('receive',{message:message, name:users[socket.id]})
     });
-
+    socket.on('base64 file', function (msg) {
+        console.log('received base64 file from' + msg.username);
+        socket.username = msg.username;
+        // socket.broadcast.emit('base64 image', //exclude sender
+        io.sockets.emit('base64 file',  //include sender
+    
+            {
+              username: socket.username,
+              file: msg.file,
+              fileName: msg.fileName
+            }
+    
+        );
+    });
     socket.on('disconnect',message=>{
         socket.broadcast.emit('left',users[socket.id]);
         delete users[socket.id];
